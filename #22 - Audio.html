@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Book Store</title>
+    <meta name="description" content="This Is Our Book Store" />
+  </head>
+  <body>
+    <div>
+      <h1>Book Store</h1>
+      <p>This Is My Book Store, Welcome</p>
+    </div>
+    <!-- 
+    - Typing Multiple <source> element isnide <audio> element , better than using src="" attribute  
+      inside <audio> element as: it makes the browser select proper audio file type for it
+
+    - <source> Attributes: src="" | type="mimi type" ; (MIMI Types: https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/MIME_types/Common_types)
+    - <audio> Attributes: 
+      src="" | controls -> add controls for audio ie: play/pause button , sound contol , media control
+      autoplay -> playing audio file immediatly after opening this page
+      loop -> after finishing playing the audio file , it repeated again
+      muted -> the audio file will not have sound
+    -->
+    <audio controls autoplay loop muted>
+      <source src="media/one_way_ticket.mp3" type="audio/mpeg">
+      <source src="media/one_way_ticket.ogg" type="audio/ogg">
+      <source src="media/one_way_ticket.wav" type="audio/wav">
+      Your Browser Does Not Support Audio Tags
+    </audio>
+  </body>
+</html>

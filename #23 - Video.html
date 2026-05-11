@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Book Store</title>
+    <meta name="description" content="This Is Our Book Store" />
+  </head>
+  <body>
+    <div>
+      <h1>Book Store</h1>
+      <p>This Is My Book Store, Welcome</p>
+    </div>
+    <!-- 
+    - controls , autoplay , loop , muted -> as in audio
+    - poster -> places a photo in place of video untill video loads & ready to play
+    - track -> enable subtitles
+    - preload -> 
+                none: Tells the browser not to load any part of the video until the user clicks play. This is best for saving bandwidth and improving initial page load speed.
+                metadata: Directs the browser to only fetch basic information about the video, such as its dimensions, duration, and first frame. This provides a better user experience than none while still being data-efficient.
+                auto: Suggests that the browser should download the entire video (or enough to ensure smooth playback) immediately upon page load. This is ideal if you expect the user to watch the video immediately.
+    -->
+    <video controls width="600" height="400" autoplay loop muted poster="imgs/home/cover-speed-website.png">
+      <source src="media/ghosts.mp4" type="video/mp4">
+      <source src="media/ghosts.ogg" type="video/ogg">
+      Your Browser Does Not Support Video Tag
+      <track src="my_file_en.vtt" kind="subtitles" srclang="en" label="English">
+      <track src="my_file_it.vtt" kind="subtitles" srclang="it" label="Italian">
+    </video>
+  </body>
+</html>
