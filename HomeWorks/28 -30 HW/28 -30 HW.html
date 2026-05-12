@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object 1</title>
+</head>
+<body>
+
+  <form  method="get">
+
+    <div class="token">
+      <label for="token"></label>
+      <input id="token" type="text" name="token" hidden value="b92f1fc2fce391ad7af633723afd3055">
+    </div>
+    
+    <br>
+    
+    <div class="email">
+      <label for="email">email</label>
+      <input id="email" type="email" name="email" readonly value="o@o.com">
+    </div>
+
+    <br>
+    
+    <div class="username">
+      <label for="username">username</label>
+      <input id="username" type="text" name="username" autofocus required minlength="5" maxlength="20">
+    </div>
+
+    <br>
+
+    <div class="checkbox">
+      
+      <div class="option1c">
+        <input id="option1c" type="checkbox" name="prog_lang" value="py" checked>
+        <label for="option1c">Python</label>
+      </div>
+
+      <div class="option2c">
+        <input id="option2c" type="checkbox" name="prog_lang" value="php">
+        <label for="option2c">PHP</label>
+      </div>
+
+      <div class="option3c">
+        <input id="option3c" type="checkbox" name="prog_lang" value="js">
+        <label for="option3c">JavaScript</label>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <div class="Radio">
+
+      <div class="option1r">
+        <input id="option1r" type="radio" name="job" value="front_end" required >
+        <label for="option1r">Front-end Dev</label>
+      </div>
+      
+      <div class="option2r">
+        <input id="option2r" type="radio" name="job" value="back_end">
+        <label for="option2r">Back-end Dev</label>
+      </div>
+
+      <div class="option3r">
+        <input id="option3r" type="radio" name="job" value="full_stack">
+        <label for="option3r">Full-Stack Dev</label>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <label for="select">Book lang_version</label>
+    <select name="Book" id="select">
+      <optgroup label="PHP">
+        <option value="5" selected>v5.0</option>
+        <option value="6">v6.0</option>
+        <option value="7">v7.0</option>
+      </optgroup>
+      <optgroup label="Python">
+        <option value="2">v2.0</option>
+        <option value="3">v3.0</option>
+        <option value="4">v3.9</option>
+      </optgroup>
+    </select>
+
+    <hr>
+
+    <textarea name="textbox" id="textbox" placeholder="story"></textarea>
+
+    <hr>
+
+    <input type="reset" value="Empty">
+    <input type="submit" value="send">
+    
+  </form>
+
+</body>
+</html>
